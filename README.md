@@ -24,6 +24,6 @@
 
 #### 3. Пример команды docker run в блоке кода
 ''' 
-docker run -d
+docker run -d \
   --name my-redis-container
 '''
