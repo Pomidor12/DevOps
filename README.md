@@ -23,7 +23,8 @@
 |REDIS_PROTECTED_MOD|Необязательно|Защищенный режим|
 
 #### 3. Пример команды docker run в блоке кода
-'''docker docker run -d \
+'''docker 
+  docker run -d \
   --name my-redis-container \
   -p 6379:6379 \ 
 REDIS_PASSWORD="123215" \ 
