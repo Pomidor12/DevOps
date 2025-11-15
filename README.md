@@ -23,7 +23,7 @@
 |REDIS_PROTECTED_MOD|Необязательно|Защищенный режим|
 
 #### 3. Пример команды docker run в блоке кода
-'''docker 
+'''yaml 
 docker run -d \
 --name my-redis-container \
 -p 6379:6379 \ 
