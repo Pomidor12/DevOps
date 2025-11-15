@@ -43,4 +43,4 @@ REDIS_PASSWORD="123215" \
 2. Конфигурация сети
 > Измените порт через REDIS_PORT для безопасности. Пример: REDIS_PORT=80
 
-![Спасибо за внимание!]>(https://www.google.com/url?sa=i&url=https%3A%2F%2Fshrek.fandom.com%2Fru%2Fwiki%2F%25D0%25A8%25D1%2580%25D0%25B5%25D0%25BA_%2528%25D0%25BF%25D0%25B5%25D1%2580%25D1%2581%25D0%25BE%25D0%25BD%25D0%25B0%25D0%25B6%2529&psig=AOvVaw2e0vadHhnRyFCbQC6JR3YR&ust=1763272760302000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjptLqy85ADFQAAAAAdAAAAABAE)
+![Спасибо за внимание!](>https://www.google.com/url?sa=i&url=https%3A%2F%2Fshrek.fandom.com%2Fru%2Fwiki%2F%25D0%25A8%25D1%2580%25D0%25B5%25D0%25BA_%2528%25D0%25BF%25D0%25B5%25D1%2580%25D1%2581%25D0%25BE%25D0%25BD%25D0%25B0%25D0%25B6%2529&psig=AOvVaw2e0vadHhnRyFCbQC6JR3YR&ust=1763272760302000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjptLqy85ADFQAAAAAdAAAAABAE)
