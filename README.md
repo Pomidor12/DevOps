@@ -24,8 +24,8 @@
 
 #### 3. Пример команды docker run в блоке кода
 ''' 
-docker run -d \
-  --name my-redis-container \
+docker: docker run -d \
+  :--name my-redis-container \
   -p 6379:6379 \
 REDIS_PASSWORD="123215" \ 
   -e REDIS_PORT=6379 \
