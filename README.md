@@ -25,5 +25,15 @@
 #### 3. Пример команды docker run в блоке кода
 ''' 
 docker run -d \
-  --name my-redis-container
+  --name my-redis-container \
+  -p 6379:6379 \
+REDIS_PASSWORD="123215" \ 
+  -e REDIS_PORT=6379 \
+  -e REDIS_DATABASE=8 \
+  -e REDIS_APENDONLY=yes \
+  -e REDIS_MAXMEMORY=256mb \
+  -e REDIS_PROTECTED_MOD=yes \ 
+  -v redis_storage:/data \
+  --restart unless=stopped \
+  mycompany/redis-cust:1.0.0
 '''
