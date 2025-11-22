@@ -1,29 +1,13 @@
-version: '3'
+name: CI Pipeline
 
-services:
-  database:
-    container_name: "PlannerPostgresDB"
-    image: (замените на свое имя из docker hub)/postgres:2.0
-    restart: always
-    environment:
-      POSTGRES_DB: planner
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: planner
-      DATABASE_URL: jdbc:postgresql://PlannerPostgresDB:5432/planner
-    ports:
-      - "5433:5432"
+on: [push]
 
-  planner:
-    image: ${DOCKER_TAG}
-    container_name: "PlannerServ"
-    depends_on:
-      - database
-    environment:
-      DATABASE_URL: jdbc:postgresql://PlannerPostgresDB:5432/planner
-      DATABASE_HOST: PlannerPostgresDB
-      DATABASE_PORT: 5432
-      DATABASE_NAME: planner
-      DATABASE_USERNAME: postgres
-      DATABASE_PASSWORD: planner
-    ports:
-      - "8080:8080"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Docker image
+        run: docker build -t my-app .
+      - name: Test container
+        run: docker run --rm my-app echo "Success!"
